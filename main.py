@@ -16,6 +16,8 @@ from flask import Flask, render_template, request
 import google.auth
 from google.cloud import translate
 
+alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
 app = Flask(__name__)
 _, PROJECT_ID = google.auth.default()
 TRANSLATE = translate.TranslationServiceClient()
